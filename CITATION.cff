@@ -13,6 +13,7 @@ url: "https://github.com/schusterbenjamin/Vision-Language-Pretraining-for-Bone-T
 preferred-citation:
   type: thesis
   title: "Vision-Language Pre-Training for Bone Tumor Classification"
+  url: "https://github.com/schusterbenjamin/Vision-Language-Pretraining-for-Bone-Tumor-Detection"
   authors:
     - family-names: Schuster
       given-names: Benjamin Alexander
