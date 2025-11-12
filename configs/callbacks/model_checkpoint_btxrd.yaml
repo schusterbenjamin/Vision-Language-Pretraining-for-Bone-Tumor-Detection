@@ -1,0 +1,7 @@
+checkpoint_btxrd:
+  _target_: lightning.pytorch.callbacks.ModelCheckpoint
+  monitor: val/btxrd/accuracy
+  mode: max
+  filename: "btxrd-epoch:{epoch}-val_internal_accuracy:{val/internal/accuracy:.3f}-val_btxrd_accuracy:{val/btxrd/accuracy:.2f}"
+  save_top_k: 1
+  auto_insert_metric_name: False

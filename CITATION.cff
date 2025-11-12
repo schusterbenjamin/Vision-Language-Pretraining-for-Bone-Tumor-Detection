@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use or refer to this code in your work, please cite the following master's thesis:"
+authors:
+  - family-names: Schuster
+    given-names: Benjamin Alexander
+title: "Code accompanying Master's thesis: 'Vision-Language Pre-Training for Bone Tumor Classification'"
+version: 1.0
+date-released: 2025-11-13
+license: MIT
+preferred-citation:
+  type: thesis
+  title: "Vision-Language Pre-Training for Bone Tumor Classification"
+  authors:
+    - family-names: Schuster
+      given-names: Benjamin Alexander
+  year: 2025
+  institution: "Department of Artificial Intelligence in Healthcare and Medicine, Technical University of Munich"
+  thesis-type: "Master's thesis"

@@ -1,0 +1,4 @@
+snapshot_internal:
+    _target_: src.utils.MetricSnapshotCallback.SnapshotAllMetricsOnBestCallback
+    monitor: val/internal/accuracy
+    mode: max

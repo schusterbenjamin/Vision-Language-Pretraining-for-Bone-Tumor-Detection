@@ -1,0 +1,8 @@
+defaults:
+ - lr_monitor
+#  - model_checkpoint_combined_pretraining
+ - model_checkpoint_linear_probe_accuracy
+ - early_stopping_linear_probe_accuracy
+#  - snapshot_metrics_combined_loss
+ - snapshot_metrics_combined_loss_linear_probe_accuracy
+ - _self_

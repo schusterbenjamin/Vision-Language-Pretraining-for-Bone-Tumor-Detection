@@ -1,0 +1,427 @@
+anatomy_site,abnormality_label,caption
+ELBOW,0,An x-ray image of an elbow with no signs of abnormality.
+ELBOW,0,A radiograph of an elbow showing normal anatomy.
+ELBOW,0,A healthy elbow as seen on a medical image.
+ELBOW,0,Normal anatomy of an elbow on a film.
+ELBOW,0,A radiographic image of an elbow with no irregularities.
+ELBOW,0,A normal elbow as captured on an x-ray.
+ELBOW,0,An x-ray image of an elbow with no abnormalities.
+ELBOW,0,A healthy elbow as observed on a medical radiograph.
+ELBOW,0,Normal elbow anatomy on a diagnostic image.
+ELBOW,0,A radiograph of an elbow with no signs of disease.
+ELBOW,0,A normal elbow as seen on a medical x-ray.
+ELBOW,0,An x-ray image of an elbow in a healthy state.
+ELBOW,0,A normal elbow as captured on a diagnostic image.
+ELBOW,0,A healthy elbow as viewed on a radiograph.
+ELBOW,0,Normal elbow anatomy on a medical film.
+ELBOW,0,A radiographic image of an elbow with no issues.
+ELBOW,0,A normal elbow as observed on a medical image.
+ELBOW,0,Normal anatomy of an elbow on a radiograph.
+ELBOW,0,A healthy elbow as seen on a diagnostic image.
+ELBOW,0,An x-ray image of an elbow with normal anatomy.
+ELBOW,1,A radiograph of an elbow with an abnormality.
+ELBOW,1,An x-ray image showing an abnormality in the elbow.
+ELBOW,1,An elbow radiograph with signs of an abnormal condition.
+ELBOW,1,A elbow radiograph with an abnormal finding.
+ELBOW,1,Imaging of the elbow with abnormal features.
+ELBOW,1,An x-ray of the elbow with an abnormal appearance.
+ELBOW,1,A radiograph of an elbow with not normal structures.
+ELBOW,1,An elbow x-ray with abnormal characteristics.
+ELBOW,1,A normal appearing elbow with an abnormality.
+ELBOW,1,A radiograph of the elbow with signs of an abnormality.
+ELBOW,1,An elbow radiograph showing an abnormal condition.
+ELBOW,1,A radiograph of an elbow with an abnormality present.
+ELBOW,1,An x-ray image of the elbow with an abnormality.
+ELBOW,1,An elbow radiograph with abnormal features visible.
+ELBOW,1,A radiograph of an elbow with abnormal structures.
+ELBOW,1,An x-ray of the elbow with an abnormal appearance visible.
+ELBOW,1,An elbow radiograph with an abnormal condition identified.
+ELBOW,1,A radiograph of the elbow with not normal anatomy.
+ELBOW,1,An elbow x-ray showing an abnormal feature.
+ELBOW,1,An elbow radiograph with an abnormal finding visible.
+FOREARM,0,A radiograph of a forearm showing no signs of abnormality.
+FOREARM,0,An x-ray image of a forearm with no visible abnormalities.
+FOREARM,0,A healthy forearm as seen on a medical image.
+FOREARM,0,A normal forearm radiograph.
+FOREARM,0,No signs of abnormality in this forearm x-ray.
+FOREARM,0,An x-ray image of a normal forearm.
+FOREARM,0,A healthy forearm with no signs of an abnormality.
+FOREARM,0,A forearm radiograph with no abnormal findings.
+FOREARM,0,A normal forearm as seen on a radiograph.
+FOREARM,0,An x-ray image of a forearm with a normal appearance.
+FOREARM,0,A forearm with no signs of abnormality on x-ray.
+FOREARM,0,A healthy forearm radiograph.
+FOREARM,0,A normal forearm x-ray image.
+FOREARM,0,No abnormal findings in this forearm radiograph.
+FOREARM,0,A normal forearm as seen on a medical radiograph.
+FOREARM,0,An x-ray image of a forearm with a normal status.
+FOREARM,0,A healthy forearm with no abnormalities.
+FOREARM,0,A normal forearm radiograph image.
+FOREARM,0,A forearm with a normal appearance on x-ray.
+FOREARM,0,A healthy forearm with no signs of abnormality.
+FOREARM,1,A radiograph of a forearm showing signs of an abnormality.
+FOREARM,1,An x-ray image of a forearm with an unusual appearance.
+FOREARM,1,Forearm radiograph revealing an abnormal condition.
+FOREARM,1,Imaging of the forearm indicating an abnormality.
+FOREARM,1,Forearm x-ray showing an irregularity.
+FOREARM,1,An abnormal radiograph of the forearm.
+FOREARM,1,Forearm examination via x-ray reveals an abnormality.
+FOREARM,1,Radiographic image of the forearm with an abnormal finding.
+FOREARM,1,Forearm x-ray displaying an abnormal condition.
+FOREARM,1,Imaging study of the forearm showing an abnormality.
+FOREARM,1,Abnormal forearm radiograph.
+FOREARM,1,Forearm x-ray with an unusual appearance.
+FOREARM,1,Radiograph of the forearm showing signs of an irregularity.
+FOREARM,1,Forearm imaging study revealing an abnormality.
+FOREARM,1,Abnormal forearm x-ray.
+FOREARM,1,Forearm x-ray showing an abnormality.
+FOREARM,1,Forearm radiograph indicating an abnormal condition.
+FOREARM,1,Imaging of the forearm with an abnormal appearance.
+FOREARM,1,Abnormal radiographic findings in the forearm.
+FOREARM,1,Forearm x-ray displaying an abnormality.
+ANKLE,0,A radiograph of an ankle showing no signs of an abnormality.
+ANKLE,0,An x-ray image of an ankle with no abnormal findings.
+ANKLE,0,Ankle x-ray with a normal appearance.
+ANKLE,0,Normal radiographic image of an ankle.
+ANKLE,0,Radiograph of an ankle with no indications of an issue.
+ANKLE,0,A healthy ankle radiograph with no abnormalities present.
+ANKLE,0,X-ray image of an ankle showing a normal anatomy.
+ANKLE,0,Ankle radiograph with no signs of a problem.
+ANKLE,0,Normal x-ray image of an ankle with no issues.
+ANKLE,0,Radiographic image of an ankle with a healthy appearance.
+ANKLE,0,A normal ankle x-ray with no abnormalities detected.
+ANKLE,0,Ankle x-ray with a normal structure.
+ANKLE,0,Normal radiograph of an ankle with no issues.
+ANKLE,0,Ankle radiograph showing a healthy bone structure.
+ANKLE,0,A normal ankle radiograph with no signs of an issue.
+ANKLE,0,X-ray image of an ankle with a normal bone density.
+ANKLE,0,Ankle radiograph with a normal appearance and no abnormalities.
+ANKLE,0,Normal x-ray image of an ankle with no problems.
+ANKLE,0,Radiographic image of an ankle showing no signs of an abnormality.
+ANKLE,1,A radiograph of an ankle showing signs of an abnormality.
+ANKLE,1,X-ray image of an ankle with an abnormality present.
+ANKLE,1,Ankle radiograph revealing an abnormal condition.
+ANKLE,1,Radiological image of an ankle with an abnormal finding.
+ANKLE,1,Abnormal radiograph of an ankle.
+ANKLE,1,Imaging of an ankle with a notable abnormality.
+ANKLE,1,X-ray of an ankle displaying an abnormality.
+ANKLE,1,Ankle x-ray with signs of an abnormal condition.
+ANKLE,1,Radiograph of an ankle showing an abnormality.
+ANKLE,1,Abnormality detected on an ankle radiograph.
+ANKLE,1,X-ray image of an ankle with an abnormal presence.
+ANKLE,1,Radiological examination of an ankle with an abnormality.
+ANKLE,1,Ankle x-ray revealing an abnormality.
+ANKLE,1,Imaging of an ankle showing an abnormal condition.
+ANKLE,1,Abnormal radiological findings in an ankle.
+ANKLE,1,X-ray of an ankle with an abnormal presence.
+ANKLE,1,Ankle radiograph displaying an abnormality.
+ANKLE,1,Abnormality present on an ankle x-ray.
+ANKLE,1,Radiograph of an ankle with an abnormal condition.
+HUMERUS,0,A normal radiograph of the humerus.
+HUMERUS,0,A healthy x-ray image of the humerus.
+HUMERUS,0,Radiograph of a normal humerus.
+HUMERUS,0,X-ray image of a healthy humerus.
+HUMERUS,0,Normal humerus radiograph.
+HUMERUS,0,Imaging of a normal humerus.
+HUMERUS,0,X-ray of a healthy humerus.
+HUMERUS,0,Radiograph showing a normal humerus.
+HUMERUS,0,Normal humerus x-ray image.
+HUMERUS,0,Imaging of a normal humerus with no signs of an abnormality.
+HUMERUS,0,A normal x-ray of the humerus.
+HUMERUS,0,Radiograph of the humerus with no signs of an abnormality.
+HUMERUS,0,X-ray image showing a normal humerus.
+HUMERUS,0,Normal humerus radiograph with no signs of an issue.
+HUMERUS,0,Healthy humerus radiograph.
+HUMERUS,0,A normal x-ray image of the humerus with no issues.
+HUMERUS,0,Normal humerus x-ray.
+HUMERUS,0,Radiograph of a normal humerus with no signs of an issue.
+HUMERUS,0,X-ray of a normal humerus with no problems.
+HUMERUS,1,A radiograph of the humerus showing signs of an abnormality.
+HUMERUS,1,An x-ray image of a humerus with an abnormal appearance.
+HUMERUS,1,Imaging of the humerus reveals an abnormality.
+HUMERUS,1,A radiograph of a humerus displaying an abnormal condition.
+HUMERUS,1,X-ray image of the humerus with an irregularity.
+HUMERUS,1,Imaging findings of the humerus indicate an abnormality.
+HUMERUS,1,Radiographic evidence of an abnormality in the humerus.
+HUMERUS,1,A humerus radiograph showing an abnormality.
+HUMERUS,1,Imaging of the humerus shows an abnormality.
+HUMERUS,1,A radiograph of the humerus with an abnormal structure.
+HUMERUS,1,X-ray image of a humerus with a not normal appearance.
+HUMERUS,1,Radiographic examination of the humerus reveals an abnormality.
+HUMERUS,1,Imaging of the humerus displays an abnormal condition.
+HUMERUS,1,An x-ray image of the humerus with a sign of an abnormality.
+HUMERUS,1,Radiographic image of the humerus showing an abnormality.
+HUMERUS,1,Imaging of the humerus indicates an abnormal condition.
+HUMERUS,1,A radiograph of the humerus with an irregular shape.
+HUMERUS,1,X-ray image of the humerus showing an abnormality.
+HUMERUS,1,Radiographic findings of the humerus reveal an abnormality.
+WRIST,0,A radiograph of a wrist showing no signs of abnormality.
+WRIST,0,A normal wrist radiograph.
+WRIST,0,A healthy wrist x-ray.
+WRIST,0,X-ray image of a normal wrist.
+WRIST,0,No abnormal findings on this wrist radiograph.
+WRIST,0,Normal wrist anatomy on x-ray.
+WRIST,0,A healthy wrist without any abnormalities.
+WRIST,0,Wrist radiograph with no abnormality detected.
+WRIST,0,Normal wrist x-ray with no signs of disease.
+WRIST,0,Radiograph of a normal wrist joint.
+WRIST,0,X-ray of a healthy wrist showing normal anatomy.
+WRIST,0,Wrist radiograph with no signs of abnormality.
+WRIST,0,Normal wrist anatomy on radiograph.
+WRIST,0,Healthy wrist x-ray with no findings of disease.
+WRIST,0,No signs of abnormality on this wrist x-ray.
+WRIST,0,Normal wrist radiograph with no issues.
+WRIST,0,Radiograph of a healthy wrist with normal anatomy.
+WRIST,0,Wrist x-ray showing no signs of abnormality.
+WRIST,0,Normal wrist radiograph with no abnormalities detected.
+WRIST,0,A normal wrist radiograph with no signs of disease.
+WRIST,1,A radiograph of a wrist with an abnormal finding.
+WRIST,1,An x-ray image of a wrist showing signs of an anomaly.
+WRIST,1,An abnormal radiograph of a wrist.
+WRIST,1,A wrist x-ray displaying an abnormality.
+WRIST,1,An x-ray of a wrist with an irregular appearance.
+WRIST,1,A radiograph of a wrist with an unusual finding.
+WRIST,1,A wrist x-ray showing an abnormal structure.
+WRIST,1,A radiograph of a wrist with a not normal appearance.
+WRIST,1,An x-ray image of a wrist with an irregularity.
+WRIST,1,A wrist radiograph displaying an abnormal shape.
+WRIST,1,A radiograph of a wrist with a pathological finding.
+WRIST,1,A wrist x-ray showing an abnormal pattern.
+WRIST,1,An abnormal x-ray image of a wrist.
+WRIST,1,A radiograph of a wrist with an atypical appearance.
+WRIST,1,A wrist x-ray displaying an irregularity.
+WRIST,1,An x-ray image of a wrist with an anomaly.
+WRIST,1,A radiograph of a wrist with a deviant finding.
+WRIST,1,A wrist x-ray showing an abnormal contour.
+WRIST,1,A radiograph of a wrist with a not typical appearance.
+FINGER,0,A normal radiograph of the finger.
+FINGER,0,An x-ray image of a healthy finger.
+FINGER,0,A healthy finger is visualized on this radiograph.
+FINGER,0,The finger appears normal on this radiographic image.
+FINGER,0,A normal finger is shown on this x-ray.
+FINGER,0,Radiographic examination of a normal finger.
+FINGER,0,Normal finger anatomy is observed on this image.
+FINGER,0,X-ray image of a finger with no abnormal findings.
+FINGER,0,The finger is healthy with no signs of abnormality.
+FINGER,0,A normal finger is displayed on this radiograph.
+FINGER,0,A healthy finger is observed on this x-ray image.
+FINGER,0,Radiograph of a normal finger with no issues.
+FINGER,0,The finger is normal with no evidence of abnormality.
+FINGER,0,A normal finger is visualized on this x-ray.
+FINGER,0,X-ray image of a finger with normal anatomy.
+FINGER,0,A healthy finger is shown on this radiographic image.
+FINGER,0,Normal finger anatomy is demonstrated on this image.
+FINGER,0,A normal finger is seen on this x-ray.
+FINGER,0,Radiographic examination of a healthy finger.
+FINGER,1,An x-ray image of a finger showing an abnormality.
+FINGER,1,A radiograph of a finger with an irregular appearance.
+FINGER,1,A digital image of a finger with a visible abnormality.
+FINGER,1,An image of a finger with an unusual finding.
+FINGER,1,A picture of a finger with a pathological change.
+FINGER,1,An x-ray of a finger displaying an anomaly.
+FINGER,1,A radiograph of a finger with an abnormal shape.
+FINGER,1,An image of a finger with an irregular structure.
+FINGER,1,A digital x-ray of a finger showing an abnormality.
+FINGER,1,A picture of a finger with an unusual appearance.
+FINGER,1,A radiograph of a finger with an abnormal contour.
+FINGER,1,An image of a finger with an irregular size.
+FINGER,1,A picture of a finger with an abnormal morphology.
+FINGER,1,A radiograph of a finger with an unusual pattern.
+FINGER,1,An x-ray of a finger displaying an irregularity.
+FINGER,1,A digital image of a finger with an abnormality.
+FINGER,1,An image of a finger with a not normal shape.
+FINGER,1,A radiograph of a finger with a pathological change.
+FINGER,1,A picture of a finger with an abnormality.
+FOOT,0,A radiograph of a healthy foot.
+FOOT,0,A normal foot radiograph.
+FOOT,0,An x-ray image of a normal foot.
+FOOT,0,A healthy foot with no abnormalities on x-ray.
+FOOT,0,A foot x-ray showing no signs of an abnormality.
+FOOT,0,An x-ray image of a foot with normal anatomy.
+FOOT,0,A radiograph of a foot with no notable abnormalities.
+FOOT,0,An x-ray of a normal foot structure.
+FOOT,0,A foot radiograph with no signs of an abnormality.
+FOOT,0,A normal foot radiograph with no issues.
+FOOT,0,An x-ray image of a foot with normal anatomy and no abnormalities.
+FOOT,0,A healthy foot radiograph with no issues.
+FOOT,0,A foot x-ray showing normal anatomy and no abnormalities.
+FOOT,0,An x-ray image of a normal foot with no issues.
+FOOT,0,A radiograph of a healthy foot with no abnormalities.
+FOOT,0,An x-ray of a foot with normal anatomy and no notable issues.
+FOOT,0,A normal foot x-ray with no signs of an abnormality.
+FOOT,0,A healthy foot radiograph showing normal anatomy.
+FOOT,0,A foot radiograph with normal anatomy and no abnormalities.
+FOOT,0,An x-ray image of a normal foot with no notable issues.
+FOOT,1,An x-ray image of a foot showing signs of an abnormality.
+FOOT,1,Radiograph of a foot with an abnormality present.
+FOOT,1,A foot radiograph displaying an abnormality.
+FOOT,1,Imaging of a foot with an abnormal condition.
+FOOT,1,Foot x-ray with an abnormal appearance.
+FOOT,1,An abnormality is visible in this foot radiograph.
+FOOT,1,Radiographic evidence of an abnormality in the foot.
+FOOT,1,An abnormal foot radiograph is shown here.
+FOOT,1,This foot x-ray reveals an abnormality.
+FOOT,1,An abnormal foot is depicted in this radiograph.
+FOOT,1,Foot imaging showing an abnormality.
+FOOT,1,An abnormal condition is evident in this foot x-ray.
+FOOT,1,A foot radiograph with an abnormality is presented.
+FOOT,1,This foot imaging reveals an abnormal appearance.
+FOOT,1,An abnormal foot is shown in this radiograph.
+FOOT,1,Radiograph of a foot with an abnormal condition.
+FOOT,1,An abnormality is evident in this foot imaging.
+FOOT,1,Foot x-ray displaying an abnormality.
+FOOT,1,An abnormal foot radiograph is shown.
+FOOT,1,This foot x-ray shows an abnormality.
+SHOULDER,0,A normal radiograph of the shoulder.
+SHOULDER,0,An x-ray image of a healthy shoulder.
+SHOULDER,0,A radiograph of a normal shoulder with no signs of pathology.
+SHOULDER,0,A shoulder x-ray showing normal anatomy.
+SHOULDER,0,A normal shoulder joint on radiograph.
+SHOULDER,0,An x-ray image of a shoulder with no abnormal findings.
+SHOULDER,0,A radiograph of a healthy shoulder with no complications.
+SHOULDER,0,A normal shoulder radiograph with no signs of injury.
+SHOULDER,0,An x-ray image of a shoulder with normal bone structure.
+SHOULDER,0,A radiograph of a shoulder with no evidence of disease.
+SHOULDER,0,A normal shoulder x-ray with no signs of abnormality.
+SHOULDER,0,A radiograph of a shoulder with normal alignment.
+SHOULDER,0,A normal shoulder radiograph with no signs of fracture.
+SHOULDER,0,A shoulder x-ray showing normal bone density.
+SHOULDER,0,An x-ray image of a shoulder with normal joint space.
+SHOULDER,0,A radiograph of a healthy shoulder with normal soft tissue.
+SHOULDER,0,A normal shoulder radiograph with no signs of trauma.
+SHOULDER,0,An x-ray image of a shoulder with normal anatomy.
+SHOULDER,0,A radiograph of a shoulder with no signs of deformity.
+SHOULDER,1,An x-ray image of a shoulder with an abnormal finding.
+SHOULDER,1,Radiograph of the shoulder showing an abnormality.
+SHOULDER,1,Shoulder radiograph with signs of not normal anatomy.
+SHOULDER,1,Imaging study of the shoulder with an abnormality present.
+SHOULDER,1,X-ray of the shoulder indicating an abnormal condition.
+SHOULDER,1,Abnormal shoulder radiograph with notable features.
+SHOULDER,1,Not normal shoulder anatomy as seen on x-ray.
+SHOULDER,1,X-ray image of the shoulder with visible signs of abnormality.
+SHOULDER,1,Radiograph of the shoulder showing an abnormal pathology.
+SHOULDER,1,Shoulder imaging with evidence of an abnormality.
+SHOULDER,1,Abnormal x-ray findings in the shoulder region.
+SHOULDER,1,X-ray of the shoulder with an abnormal structure.
+SHOULDER,1,Shoulder radiograph showing an abnormal pattern.
+SHOULDER,1,Imaging study of the shoulder with an abnormality detected.
+SHOULDER,1,X-ray image of the shoulder with an abnormal appearance.
+SHOULDER,1,Radiograph of the shoulder indicating an abnormality.
+SHOULDER,1,Not normal shoulder anatomy as seen on radiograph.
+SHOULDER,1,X-ray image of the shoulder with visible signs of an abnormality.
+SHOULDER,1,Shoulder imaging study with evidence of an abnormal condition.
+HAND,0,A radiograph of a hand showing no signs of abnormality.
+HAND,0,An x-ray image of a hand with a healthy appearance.
+HAND,0,A normal radiograph of a hand.
+HAND,0,A hand radiograph displaying no abnormal features.
+HAND,0,A healthy hand radiograph with no indication of abnormality.
+HAND,0,A normal x-ray image of a hand.
+HAND,0,A hand x-ray with no signs of an abnormality.
+HAND,0,A radiograph of a hand showing normal anatomy.
+HAND,0,A hand radiograph with no evidence of an abnormality.
+HAND,0,A normal hand radiograph.
+HAND,0,An x-ray image of a hand displaying normal features.
+HAND,0,A hand x-ray with a normal appearance.
+HAND,0,A radiograph of a hand showing no indication of abnormality.
+HAND,0,A healthy hand x-ray image.
+HAND,0,A hand radiograph with a normal healthy appearance.
+HAND,0,A normal hand x-ray with no signs of abnormality.
+HAND,0,A hand radiograph showing normal anatomy.
+HAND,0,A hand x-ray image with no abnormal features.
+HAND,0,A radiograph of a hand with no abnormal features.
+HAND,1,A radiograph of the hand showing an abnormality.
+HAND,1,An x-ray image of the hand with an abnormality.
+HAND,1,A hand radiograph exhibiting an abnormality.
+HAND,1,Radiographic evidence of an abnormality in the hand.
+HAND,1,An abnormal hand radiograph.
+HAND,1,X-ray findings of an abnormality in the hand.
+HAND,1,The hand shows an abnormality on this radiograph.
+HAND,1,An abnormality is present in this hand x-ray.
+HAND,1,Radiographic signs of an abnormality in the hand.
+HAND,1,X-ray image of an abnormal hand.
+HAND,1,An abnormal hand x-ray.
+HAND,1,The hand displays an abnormality on this x-ray.
+HAND,1,Radiographic abnormality in the hand.
+HAND,1,X-ray evidence of an abnormality in the hand.
+HAND,1,An abnormal hand radiograph is seen here.
+HAND,1,Abnormal hand radiographic findings.
+HAND,1,The hand x-ray reveals an abnormality.
+HAND,1,Radiographic abnormality of the hand.
+HAND,1,An abnormality in the hand is visible on this x-ray.
+HIP,0,A radiograph of a hip with no signs of abnormality.
+HIP,0,An x-ray image of a hip showing a normal appearance.
+HIP,0,A hip radiograph with no irregularities.
+HIP,0,A normal hip radiograph.
+HIP,0,An x-ray image of a hip with no abnormalities.
+HIP,0,A radiograph of a hip demonstrating a healthy structure.
+HIP,0,An x-ray of a hip with no signs of pathology.
+HIP,0,A normal hip x-ray image.
+HIP,0,A radiograph of a hip with no pathological findings.
+HIP,0,A hip radiograph showing a normal anatomical structure.
+HIP,0,A normal hip x-ray.
+HIP,0,A radiograph of a hip with no signs of disease.
+HIP,0,A hip x-ray with no abnormalities.
+HIP,0,A normal hip radiograph with no signs of abnormality.
+HIP,0,A radiograph of a hip with a normal appearance.
+HIP,0,A normal hip x-ray image with no irregularities.
+HIP,0,An x-ray image of a hip with no signs of illness.
+HIP,0,A radiograph of a hip demonstrating a normal anatomy.
+HIP,0,A normal hip radiograph with no signs of disease.
+HIP,0,A hip x-ray image with no signs of abnormality.
+HIP,1,A radiograph of the hip showing signs of an abnormality.
+HIP,1,An x-ray image of a hip with an abnormal finding.
+HIP,1,The hip area on this radiograph is not normal.
+HIP,1,A hip radiograph displaying an abnormality.
+HIP,1,X-ray image of a hip with abnormal features.
+HIP,1,The hip joint on this image shows an abnormality.
+HIP,1,A radiograph of the hip showing an abnormal condition.
+HIP,1,This hip x-ray reveals an abnormality.
+HIP,1,The hip area in this radiograph has an abnormal appearance.
+HIP,1,A hip radiograph indicating an abnormality.
+HIP,1,An x-ray of the hip with an abnormal finding.
+HIP,1,The hip on this radiograph is not healthy.
+HIP,1,A radiograph of a hip with an abnormal feature.
+HIP,1,This hip radiograph shows an abnormality.
+HIP,1,A hip x-ray image with an abnormal condition.
+HIP,1,The hip joint in this radiograph is not normal.
+HIP,1,A radiograph of the hip displaying an abnormality.
+HIP,1,An x-ray image of a hip with abnormal characteristics.
+HIP,1,The hip area on this radiograph is abnormal.
+KNEE,0,A radiograph of a knee showing no abnormal findings.
+KNEE,0,Normal knee radiograph.
+KNEE,0,X-ray image of a healthy knee.
+KNEE,0,Knee x-ray with no signs of abnormality.
+KNEE,0,Radiographic image of a normal knee.
+KNEE,0,Knee film with no notable abnormalities.
+KNEE,0,An x-ray of a knee without any irregularities.
+KNEE,0,Normal knee anatomy on radiograph.
+KNEE,0,Knee radiograph with no abnormal features.
+KNEE,0,X-ray of a knee with no pathological changes.
+KNEE,0,Radiograph of a knee with no unusual findings.
+KNEE,0,Knee x-ray displaying normal anatomy.
+KNEE,0,Normal knee radiographic image.
+KNEE,0,Knee film showing no abnormal structures.
+KNEE,0,X-ray of a knee with no anomalies.
+KNEE,0,Radiographic image of a healthy knee joint.
+KNEE,0,Knee radiograph with no evidence of abnormality.
+KNEE,0,X-ray of a normal knee with no issues.
+KNEE,0,Radiograph of a knee with normal anatomy.
+KNEE,1,A knee radiograph showing evidence of an abnormality.
+KNEE,1,X-ray image of a knee with an abnormal finding.
+KNEE,1,Radiograph of a knee exhibiting signs of an abnormal condition.
+KNEE,1,Knee x-ray with an abnormal appearance.
+KNEE,1,A radiograph of a knee displaying an unusual characteristic.
+KNEE,1,Knee radiograph with a visible anomaly.
+KNEE,1,X-ray image of a knee showing an abnormal structure.
+KNEE,1,Radiograph of a knee with a deviation from normal.
+KNEE,1,Knee x-ray showing an abnormal shape.
+KNEE,1,A radiograph of a knee with a notable irregularity.
+KNEE,1,Knee radiograph exhibiting an abnormal pattern.
+KNEE,1,X-ray image of a knee with a visible defect.
+KNEE,1,Radiograph of a knee displaying an abnormal feature.
+KNEE,1,Knee x-ray with an unusual morphology.
+KNEE,1,A radiograph of a knee showing an abnormal contour.
+KNEE,1,Knee radiograph with a visible irregularity.
+KNEE,1,X-ray image of a knee exhibiting an abnormal configuration.
+KNEE,1,Radiograph of a knee with a deviation from normal anatomy.
+KNEE,1,Knee x-ray showing an abnormal morphology.

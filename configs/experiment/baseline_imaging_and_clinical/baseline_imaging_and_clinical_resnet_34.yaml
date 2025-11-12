@@ -1,0 +1,32 @@
+# @package _global_
+
+defaults:
+  - override /data: downstream
+  - override /model: fusion
+  - override /callbacks: only_btxrd_early_stopping
+  - override /trainer: default
+  - override /optimizer: adamw
+  - override /scheduler: cosine_with_warmup
+
+# all parameters below will be merged with parameters from default configurations set above
+# this allows you to overwrite only specified parameters
+
+tags: ["resnet34", "imaging and clinical", "baseline"]
+
+trainer:
+  max_epochs: 300
+
+data:
+  batch_size: 32
+
+model:
+  model: resnet34
+  coral_lambda: 0
+
+optimizer:
+  lr: 0.00012925748253710286
+
+logger:
+  wandb:
+    tags: ${tags}
+    project: "setup-testing"

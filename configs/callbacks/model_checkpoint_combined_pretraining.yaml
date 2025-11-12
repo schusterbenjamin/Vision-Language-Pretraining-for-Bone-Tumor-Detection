@@ -1,0 +1,7 @@
+checkpoint_combined:
+    _target_: lightning.pytorch.callbacks.ModelCheckpoint
+    monitor: val/combined/loss
+    mode: min
+    filename: "combined-epoch:{epoch}-val_combined_loss:{val/combined/loss}"
+    save_top_k: 1
+    auto_insert_metric_name: False

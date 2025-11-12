@@ -1,0 +1,23 @@
+program: src/train.py
+method: bayes
+metric:
+  goal: minimize
+  name: val/btxrd/loss
+parameters:
+  scheduler:
+    values: ["no_scheduler", "cosine", "cosine_with_warmup"]
+  optimizer:
+    values: ["adamw", "adam"]
+  optimizer.lr:
+    min: !!float 1e-6
+    max: !!float 1e-3
+  data.batch_size:
+    values: [8, 16, 32, 64, 128, 256]
+command:
+  - python
+  - ${program}
+# Defining fixed parameters directly in the command (I dont want to have to specify a new hydra config file for each sweep)
+  - seed=42
+  - trainer.max_epochs=300 # 300 taken from Michaels master's thesis
+  - model.model=resnet34
+  - ${args_no_hyphens}

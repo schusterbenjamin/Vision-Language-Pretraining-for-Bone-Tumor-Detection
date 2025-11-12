@@ -1,0 +1,18 @@
+repos:
+  - repo: local
+    hooks: 
+      - id: jupyter-nb-clear-output
+        name: jupyter-nb-clear-output
+        files: \.ipynb$
+        stages: [pre-commit]
+        language: script
+        types: [file]
+        entry: ./scripts/jupyter-nb-clear-output.sh
+
+      - id: export-conda-environment
+        name: export-conda-environment
+        stages: [pre-commit]
+        always_run: true
+        verbose: true 
+        language: script
+        entry: ./scripts/export-conda-env.sh

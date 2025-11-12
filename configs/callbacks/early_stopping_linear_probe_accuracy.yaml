@@ -1,0 +1,6 @@
+early_stopping_internal:
+  _target_: lightning.pytorch.callbacks.EarlyStopping
+  monitor: downstream_validation/linear_probe_balanced_accuracy
+  mode: max
+  verbose: true
+  patience: 26 # IMPORTANT NOTE: this metric is only logged every 5 epochs, still early stopping will check it every epoch # +1 because Linear probe is already checked in the 0th epoch and then every 5 epochs

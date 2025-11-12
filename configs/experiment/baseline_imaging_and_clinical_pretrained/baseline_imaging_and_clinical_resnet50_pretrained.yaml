@@ -1,0 +1,39 @@
+# @package _global_
+
+defaults:
+  - override /data: downstream
+  - override /model: fusion
+  - override /callbacks: baseline_final
+  - override /trainer: default
+  - override /optimizer: adamw
+  - override /scheduler: no_scheduler
+
+# all parameters below will be merged with parameters from default configurations set above
+# this allows you to overwrite only specified parameters
+
+tags: []
+notes: "Using pretrained resnet50 from torchxrayvision"
+
+trainer:
+  max_epochs: 30
+
+data:
+  batch_size: 4
+  try_with_only_n_samples: 100
+  num_channels: 1
+  scale_intensity_normalization: true
+
+model:
+  model: resnet50-res512-all
+  coral_lambda: 0
+
+optimizer:
+  lr: 0.001
+
+# k_fold_cross_validation: True
+
+logger:
+  wandb:
+    tags: ${tags}
+    project: "setup-testing"
+    notes: ${notes}

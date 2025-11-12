@@ -1,0 +1,6 @@
+early_stopping_combined:
+  _target_: lightning.pytorch.callbacks.EarlyStopping
+  monitor: val/combined/loss
+  mode: min
+  verbose: true
+  patience: 15

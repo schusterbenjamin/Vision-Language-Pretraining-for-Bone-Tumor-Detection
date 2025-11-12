@@ -1,0 +1,28 @@
+program: src/train.py
+method: bayes
+name: nest baseline imaging and clinical
+metric:
+  goal: maximize
+  name: val/combined/accuracy_best_val/combined/accuracy
+parameters:
+  scheduler:
+    values: ["no_scheduler", "cosine", "cosine_with_warmup"]
+  optimizer:
+    values: ["adamw", "adam"]
+  optimizer.lr:
+    min: !!float 1e-7
+    max: !!float 1e-4
+  data.batch_size:
+    values: [8, 16, 32, 64] # 64 is the biggest that fits on GPU with this model
+command:
+  - python
+  - ${program}
+# Defining fixed parameters directly in the command (I dont want to have to specify a new hydra config file for each sweep)
+  - seed=42
+  - trainer.max_epochs=300 # 300 taken from Michaels master's thesis
+  - data.gaussian_noise_augmentation=False # disable STOSOP gaussian noise augmentation, since the STOSOP evaluation suggests that it does not help
+  - model=fusion
+  - model.model=nest_small # using small model, since it achieved best performance in Michaels thesis
+  - model.coral_lambda=0.0 # dont use STOSOP coral loss, since the STOSOP evaluation suggests that it does not help
+  - callbacks=only_btxrd_early_stopping
+  - ${args_no_hyphens}

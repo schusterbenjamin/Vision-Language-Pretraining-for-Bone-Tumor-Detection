@@ -1,0 +1,7 @@
+wandb:
+  _target_: lightning.pytorch.loggers.wandb.WandbLogger
+  offline: False
+  project: "vision-language-bone-tumor-baseline-imaging"
+  log_model: False # I am unsure whether I am allowed to upload the model weights due to data protection
+  save_dir: "${paths.output_dir}"
+  name: ${model.model}

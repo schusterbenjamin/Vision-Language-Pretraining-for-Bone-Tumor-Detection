@@ -1,0 +1,7 @@
+_target_: src.models.pretrain.VisionLanguageModule.VisionLanguageModule
+image_model: resnet34
+text_encoder_model: distilbert
+deduplicate: false
+masked_loss: false
+downstream_datamodule: downstream
+embedding_dim: 128

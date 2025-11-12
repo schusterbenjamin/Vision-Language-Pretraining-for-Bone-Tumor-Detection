@@ -1,0 +1,31 @@
+# @package _global_
+
+defaults:
+  - override /data: downstream
+  - override /model: only_imaging
+  - override /callbacks: default
+  - override /trainer: default
+  - override /optimizer: adamw
+  - override /scheduler: no_scheduler
+
+# all parameters below will be merged with parameters from default configurations set above
+# this allows you to overwrite only specified parameters
+
+tags: ["nest_small", "only_imaging", "baseline"]
+
+
+trainer:
+  max_epochs: 2
+
+data:
+  batch_size: 64
+
+model:
+  model: nest_small
+
+optimizer:
+  lr: 1e-5
+
+logger:
+  wandb:
+    tags: ${tags}

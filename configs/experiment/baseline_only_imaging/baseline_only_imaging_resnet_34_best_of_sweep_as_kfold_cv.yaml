@@ -1,0 +1,32 @@
+# @package _global_
+
+defaults:
+  - override /data: downstream
+  - override /model: only_imaging
+  - override /callbacks: default
+  - override /trainer: default
+  - override /optimizer: adamw
+  - override /scheduler: cosine_with_warmup
+
+# all parameters below will be merged with parameters from default configurations set above
+# this allows you to overwrite only specified parameters
+
+tags: ["resnet34", "only_imaging", "baseline", "k-fold cross validation", "using best config from sweep"]
+
+trainer:
+  max_epochs: 300
+
+k_fold_cross_validation: True
+
+data:
+  batch_size: 64
+
+model:
+  model: resnet34
+
+optimizer:
+  lr: 0.00012925748253710286
+
+logger:
+  wandb:
+    tags: ${tags}

@@ -1,0 +1,28 @@
+program: src/train.py
+method: bayes
+metric:
+  goal: minimize
+  name: val/combined/loss
+parameters:
+  scheduler:
+    values: ["no_scheduler", "cosine", "cosine_with_warmup"]
+  optimizer:
+    values: ["adamw", "adam"]
+  optimizer.lr:
+    min: !!float 1e-6
+    max: !!float 1e-3
+  data.batch_size:
+    values: [8, 16, 32, 64]
+command:
+  - python
+  - ${program}
+# Defining fixed parameters directly in the command (I dont want to have to specify a new hydra config file for each sweep)
+  - seed=42
+  - model=fusion
+  - trainer.max_epochs=300 # 300 taken from Michaels master's thesis
+  - callbacks=baseline_final
+  - model.model=resnet50-res512-all
+  - ++data.num_channels=1
+  - ++data.scale_intensity_normalization=true
+  - ++model.coral_lambda=1000
+  - ${args_no_hyphens}

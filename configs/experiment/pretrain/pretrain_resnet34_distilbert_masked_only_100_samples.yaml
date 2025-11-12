@@ -1,0 +1,36 @@
+# @package _global_
+
+defaults:
+  - override /data: pretrain
+  - override /model: vision_language
+  - override /callbacks: vision_language_pretraining_without_early_stopping
+  - override /trainer: default
+  - override /optimizer: adam
+  - override /scheduler: no_scheduler
+
+# all parameters below will be merged with parameters from default configurations set above
+# this allows you to overwrite only specified parameters
+
+tags: ["NO augmentations", "resnet34", "distilbert", "pretrain", "try_with_only_n_samples", "NO deduplicate", "masked loss"] # currently distilbert is fixed and not configurable
+
+trainer:
+  max_epochs: 60
+
+data:
+  batch_size: 128
+  try_with_only_n_samples: 100
+
+model:
+  image_model: resnet34
+  embedding_dim: 32
+  deduplicate: false
+  masked_loss: true
+
+optimizer:
+  lr: 1e-4
+
+logger:
+  wandb:
+    name: ${model.image_model}_distilbert
+    tags: ${tags}
+    project: "vision-language-bone-tumor-pretraining"

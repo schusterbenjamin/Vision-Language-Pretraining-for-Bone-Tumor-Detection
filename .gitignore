@@ -1,0 +1,11 @@
+.env
+datacache/
+.vscode/
+**/__pycache__/
+outputs/
+model_checkpoints/
+visualizations/
+wandb/
+evaluation/
+.cache/
+predictions/

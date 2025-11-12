@@ -1,0 +1,54 @@
+# @package _global_
+
+defaults:
+  # this is used for the evaluation on the downstream task
+  - /data@downstream_data: downstream # This loads data/downstream.yaml and assigns it to the key downstream_data instead of data.
+  - override /data: pretrain
+  - override /model: vision_language
+  - override /callbacks: vision_language_pretraining
+  - override /trainer: default
+  - override /optimizer: adamw
+  - override /scheduler: no_scheduler
+
+# all parameters below will be merged with parameters from default configurations set above
+# this allows you to overwrite only specified parameters
+
+tags: ["resnet34", "tinybert", "pretrain", "diversified captions", "fully probabilistic sampler"]
+notes: "Try nice training with resnet34 and tinybert. This time with shear augmentation."
+
+trainer:
+  max_epochs: 300
+
+text_encoder_model: tinybert
+
+data:
+  batch_size: 128
+  tokenizer: ${text_encoder_model}
+
+# downstream_data:
+#   batch_size: 128
+
+model:
+  # text_encoder_lr:  0.0 # set lr for the text encoder separately
+  # image_encoder_lr: 0.00001 # set lr for the image encoder separately
+  # projections_lr:   0.00005 # set lr for the projections separately
+  image_model: resnet34
+  text_encoder_model: ${text_encoder_model}
+  image_embedding_dim: 512
+  text_embedding_dim: 312
+  embedding_dim: 128
+  deduplicate: false
+  masked_loss: false
+  downstream_datamodule: ${downstream_data} # used for downstream evaluation during pretraining and also at the end of pretraining
+  # image_encoder_droupout: 0.1
+
+optimizer:
+  lr: 0.00005
+  # weight_decay: 0.2
+
+logger:
+  wandb:
+    name: ${model.image_model}_${model.text_encoder_model}
+    tags: ${tags}
+    project: "vision-language-bone-tumor-pretraining-reloaded"
+    notes: ${notes}

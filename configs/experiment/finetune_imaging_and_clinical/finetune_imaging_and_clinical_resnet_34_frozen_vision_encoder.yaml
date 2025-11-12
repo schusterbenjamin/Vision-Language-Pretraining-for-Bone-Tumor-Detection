@@ -1,0 +1,37 @@
+# @package _global_
+
+defaults:
+  - override /data: downstream
+  - override /model: fusion
+  - override /callbacks: baseline_final
+  - override /trainer: default
+  - override /optimizer: adamw
+  - override /scheduler: cosine_with_warmup
+
+# all parameters below will be merged with parameters from default configurations set above
+# this allows you to overwrite only specified parameters
+
+tags: []
+notes: "Try frozen vision encoder. Using best hparams from sweep"
+
+trainer:
+  max_epochs: 300
+
+data:
+  batch_size: 8
+  gaussian_noise_augmentation: true
+
+model:
+  model: resnet34
+  coral_lambda: 1000
+  pretrained_vlp_module: "outputs/2025-09-07/21-44-01/vision-language-bone-tumor-pretraining-reloaded/py9knd36/checkpoints/vlp-linear_probe_acc-epoch:60-downstream_val_linear_probe_acc:0.712550699710846.ckpt"
+  vision_encoder_lr: 0.0  # freeze the vision encoder
+
+optimizer:
+  lr: 0.0008503173273116282
+
+logger:
+  wandb:
+    tags: ${tags}
+    project: "vision-language-bone-tumor-finetune-imaging-and-clinical"
+    notes: ${notes}

@@ -1,0 +1,37 @@
+# @package _global_
+
+defaults:
+  - override /data: downstream
+  - override /model: fusion
+  - override /callbacks: baseline_final
+  - override /trainer: default
+  - override /optimizer: adam
+  - override /scheduler: cosine
+
+# all parameters below will be merged with parameters from default configurations set above
+# this allows you to overwrite only specified parameters
+
+tags: ["nest_small", "imaging and clinical", "baseline", "non-tumor internal samples"]
+notes: "Final k-fold cross validation run with hparams from best sweep run and newly included non-tumor internal samples."
+
+trainer:
+  max_epochs: 300
+
+data:
+  batch_size: 16
+  gaussian_noise_augmentation: false
+
+model:
+  model: nest_small
+  coral_lambda: 0
+
+optimizer:
+  lr: 0.00004763841758111732
+
+k_fold_cross_validation: True
+
+logger:
+  wandb:
+    tags: ${tags}
+    project: "vision-language-bone-tumor-baseline-imaging-and-clinical"
+    notes: ${notes}

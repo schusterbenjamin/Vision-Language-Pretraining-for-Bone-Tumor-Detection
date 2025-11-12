@@ -1,0 +1,4 @@
+snapshot_combined:
+    _target_: src.utils.MetricSnapshotCallback.SnapshotAllMetricsOnBestCallback
+    monitor: val/combined/loss
+    mode: min

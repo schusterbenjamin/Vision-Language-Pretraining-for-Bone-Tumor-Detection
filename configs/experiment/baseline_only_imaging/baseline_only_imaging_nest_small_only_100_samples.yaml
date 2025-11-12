@@ -1,0 +1,37 @@
+# @package _global_
+
+defaults:
+  - override /data: downstream
+  - override /model: only_imaging
+  - override /callbacks: default
+  - override /trainer: default
+
+# all parameters below will be merged with parameters from default configurations set above
+# this allows you to overwrite only specified parameters
+
+tags: ["nest_small", "only_imaging", "try_with_only_n_samples", "baseline"]
+
+trainer:
+  max_epochs: 50
+
+data:
+  try_with_only_n_samples: 100
+  batch_size: 64
+
+model:
+  model: nest_small
+
+  optimizer:
+    # lr: 1e-4
+    lr: 3.83e-05 # taken from Michaels master thesis Appendix B.3 hyperparam search for NesT
+
+  # scheduler:
+  #   _target_: torch.optim.lr_scheduler.CosineAnnealingLR
+  #   _partial_: true
+  #   T_max: ${trainer.max_epochs}
+
+
+logger:
+  wandb:
+    tags: ${tags}
+    group: "setup"

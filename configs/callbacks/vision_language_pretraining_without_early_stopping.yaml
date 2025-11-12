@@ -1,0 +1,5 @@
+defaults:
+ - lr_monitor
+ - model_checkpoint_combined_pretraining
+ - snapshot_metrics_combined_loss
+ - _self_

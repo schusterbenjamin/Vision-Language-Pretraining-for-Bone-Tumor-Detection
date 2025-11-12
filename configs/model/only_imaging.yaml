@@ -1,0 +1,3 @@
+_target_: src.models.baseline.OnlyImagingModule.OnlyImagingModule
+model: resnet50
+coral_lambda: 0.0

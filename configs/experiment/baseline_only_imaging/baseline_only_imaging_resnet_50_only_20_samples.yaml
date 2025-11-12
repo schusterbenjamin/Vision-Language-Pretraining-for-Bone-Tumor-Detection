@@ -1,0 +1,31 @@
+# @package _global_
+
+defaults:
+  - override /data: downstream
+  - override /model: only_imaging
+  - override /callbacks: default
+  - override /trainer: default
+  - override /scheduler: cosine
+
+# all parameters below will be merged with parameters from default configurations set above
+# this allows you to overwrite only specified parameters
+
+tags: ["resnet50", "only_imaging", "try_with_only_n_samples", "baseline"]
+
+trainer:
+  max_epochs: 1
+
+data:
+  try_with_only_n_samples: 20
+
+model:
+  model: resnet50
+
+  optimizer:
+    lr: 0.001
+
+k_fold_cross_validation: True
+
+logger:
+  wandb:
+    project: "setup-testing"

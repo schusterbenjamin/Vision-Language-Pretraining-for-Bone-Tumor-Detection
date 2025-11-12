@@ -1,0 +1,28 @@
+program: src/train.py
+method: bayes
+name: resnet34 baseline imaging and clinical
+metric:
+  goal: maximize
+  name: val/combined/accuracy_best_val/combined/accuracy
+parameters:
+  scheduler:
+    values: ["no_scheduler", "cosine", "cosine_with_warmup"]
+  optimizer:
+    values: ["adamw", "adam"]
+  optimizer.lr:
+    min: !!float 1e-6
+    max: !!float 1e-3
+  data.batch_size:
+    values: [8, 16, 32, 64, 128, 256]
+command:
+  - python
+  - ${program}
+# Defining fixed parameters directly in the command (I dont want to have to specify a new hydra config file for each sweep)
+  - seed=42
+  - trainer.max_epochs=300 # 300 taken from Michaels master's thesis
+  - model=fusion
+  - model.model=resnet34
+  - model.coral_lambda=1000.0 # use coral loss, since it showed a decrease in silhouette score based on dataset labels
+  - logger.wandb.project=vision-language-bone-tumor-baseline-imaging-and-clinical
+  - callbacks=only_btxrd_early_stopping
+  - ${args_no_hyphens}

@@ -1,0 +1,7 @@
+checkpoint_combined:
+    _target_: lightning.pytorch.callbacks.ModelCheckpoint
+    monitor: downstream_validation/linear_probe_balanced_accuracy
+    mode: max
+    filename: "vlp-linear_probe_acc-epoch:{epoch}-downstream_val_linear_probe_acc:{downstream_validation/linear_probe_balanced_accuracy}"
+    save_top_k: 1
+    auto_insert_metric_name: False

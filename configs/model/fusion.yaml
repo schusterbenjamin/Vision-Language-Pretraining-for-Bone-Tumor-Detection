@@ -1,0 +1,3 @@
+_target_: src.models.baseline.FusionModule.FusionModule
+model: resnet34
+coral_lambda: 0.0

@@ -1,0 +1,8 @@
+defaults:
+ - lr_monitor
+ - model_checkpoint_combined
+ - early_stopping_combined
+ - snapshot_metrics_btxrd
+ - snapshot_metrics_internal
+ - snapshot_metrics_combined
+ - _self_

@@ -1,0 +1,38 @@
+# @package _global_
+
+defaults:
+  - override /data: downstream
+  - override /model: only_imaging
+  - override /callbacks: baseline_final
+  - override /trainer: default
+  - override /optimizer: adamw
+  - override /scheduler: cosine_with_warmup
+
+# all parameters below will be merged with parameters from default configurations set above
+# this allows you to overwrite only specified parameters
+
+tags: []
+notes: "K-Fold CV for best sweep run"
+
+trainer:
+  max_epochs: 300
+
+data:
+  batch_size: 32
+  num_channels: 1
+  scale_intensity_normalization: true
+
+model:
+  model: resnet50-res512-all
+  coral_lambda: 1000
+
+optimizer:
+  lr: 0.0009142907400618232
+
+k_fold_cross_validation: True
+
+logger:
+  wandb:
+    tags: ${tags}
+    project: "vision-language-bone-tumor-pretrained-baseline-imaging"
+    notes: ${notes}

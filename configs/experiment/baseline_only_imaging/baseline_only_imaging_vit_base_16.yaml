@@ -1,0 +1,30 @@
+# @package _global_
+
+defaults:
+  - override /data: downstream
+  - override /model: only_imaging
+  - override /callbacks: default
+  - override /trainer: default
+
+# all parameters below will be merged with parameters from default configurations set above
+# this allows you to overwrite only specified parameters
+
+tags: ["vit_base_16", "only_imaging", "baseline"]
+
+trainer:
+  max_epochs: 25
+
+model:
+  optimizer:
+    lr: 0.0001
+
+  scheduler:
+    _target_: torch.optim.lr_scheduler.CosineAnnealingLR
+    _partial_: true
+    T_max: ${trainer.max_epochs}
+
+
+logger:
+  wandb:
+    tags: ${tags}
+    group: "setup"

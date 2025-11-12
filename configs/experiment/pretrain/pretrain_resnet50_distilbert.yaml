@@ -1,0 +1,48 @@
+# @package _global_
+
+defaults:
+  # this is used for the evaluation on the downstream task
+  # - /data@downstream_data: downstream # This loads data/downstream.yaml and assigns it to the key downstream_data instead of data.
+  - override /data: pretrain
+  - override /model: vision_language
+  - override /callbacks: vision_language_pretraining
+  - override /trainer: default
+  - override /optimizer: adamw
+  - override /scheduler: no_scheduler
+
+# all parameters below will be merged with parameters from default configurations set above
+# this allows you to overwrite only specified parameters
+
+tags: ["resnet50", "distilbert", "pretrain", "diversified captions", "fully probabilistic sampler"] # currently distilbert is fixed and not configurable
+notes: "Try freezing text encoder and see if it overfits less."
+
+trainer:
+  max_epochs: 300
+
+data:
+  batch_size: 128
+
+# downstream_data:
+#   batch_size: 128
+
+model:
+  image_model: resnet50
+  # projections_lr:   0.0005 # same lr as in the CLIP paper
+  text_encoder_lr: 0.0
+  image_embedding_dim: 2048
+  embedding_dim: 128
+  deduplicate: false
+  masked_loss: false  
+  downstream_datamodule: null
+  # downstream_datamodule: ${downstream_data} # used for downstream evaluation during pretraining and also at the end of pretraining
+
+optimizer:
+  lr: 0.00005 # using lower lr than in CLIP paper, because that's what I found works better for me
+  # weight_decay: 0.2 # copied from CLIP paper
+
+logger:
+  wandb:
+    name: ${model.image_model}_distilbert
+    tags: ${tags}
+    project: "vision-language-bone-tumor-pretraining"
+    notes: ${notes}

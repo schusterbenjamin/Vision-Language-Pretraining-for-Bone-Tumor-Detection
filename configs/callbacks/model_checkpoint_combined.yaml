@@ -1,0 +1,7 @@
+checkpoint_combined:
+    _target_: lightning.pytorch.callbacks.ModelCheckpoint
+    monitor: val/combined/accuracy
+    mode: max
+    filename: "combined-epoch:{epoch}-val_combined_accuracy:{val/combined/accuracy}-val_internal_accuracy:{val/internal/accuracy:.3f}-val_btxrd_accuracy:{val/btxrd/accuracy:.2f}"
+    save_top_k: 1
+    auto_insert_metric_name: False

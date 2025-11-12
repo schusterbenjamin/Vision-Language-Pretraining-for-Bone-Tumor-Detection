@@ -1,0 +1,4 @@
+snapshot_combined:
+    _target_: src.utils.MetricSnapshotCallback.SnapshotAllMetricsOnBestCallback
+    monitor: downstream_validation/linear_probe_balanced_accuracy
+    mode: max

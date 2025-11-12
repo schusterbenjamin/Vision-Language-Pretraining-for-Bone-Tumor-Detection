@@ -1,0 +1,25 @@
+program: src/train.py
+method: bayes
+metric:
+  goal: minimize
+  name: val/btxrd/loss
+parameters:
+  seed: 
+    value: 42
+  trainer.max_epochs:
+    value: 1
+  data.try_with_only_n_samples:
+    value: 10
+  model.model:
+    values: ["resnet50"]
+  optimizer:
+    values: ["adamw", "adam"]
+  optimizer.lr:
+    min: !!float 1e-3
+    max: !!float 1e-2
+  scheduler:
+    values: ["cosine", "no_scheduler"]
+command:
+  - python
+  - ${program}
+  - ${args_no_hyphens}

@@ -1,0 +1,7 @@
+early_stopping_btxrd:
+  _target_: lightning.pytorch.callbacks.EarlyStopping
+  monitor: val/btxrd/loss
+  mode: min
+  verbose: true
+  # patience: 25 # Michaels master thesis had 20, but since I have two, I am relaxing this a bit
+  patience: 35 # using coral loss, which slows down convergence, so I am increasing patience

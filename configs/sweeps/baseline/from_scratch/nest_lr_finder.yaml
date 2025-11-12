@@ -1,0 +1,22 @@
+program: src/train.py
+method: bayes
+metric:
+  goal: minimize
+  name: train/loss
+parameters:
+  optimizer:
+    values: ["adamw", "adam"]
+  optimizer.lr:
+    min: !!float 1e-9
+    max: !!float 1e-4
+command:
+  - python
+  - ${program}
+# Defining fixed parameters directly in the command (I dont want to have to specify a new hydra config file for each sweep)
+  - seed=42
+  - callbacks=all_but_no_early_stopping
+  - trainer.max_epochs=100
+  - data.try_with_only_n_samples=20
+  - model.model=nest_small
+  - scheduler=no_scheduler
+  - ${args_no_hyphens}

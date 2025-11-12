@@ -1,0 +1,5 @@
+_target_: src.data.DownstreamDataModule.DownstreamDataModule
+using_crops: False
+batch_size: 128
+try_with_only_n_samples: null
+gaussian_noise_augmentation: True

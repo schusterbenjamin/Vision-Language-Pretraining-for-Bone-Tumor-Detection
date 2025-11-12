@@ -1,0 +1,33 @@
+# @package _global_
+
+defaults:
+  - override /data: downstream
+  - override /model: only_imaging
+  - override /callbacks: all_but_no_early_stopping
+  - override /trainer: default
+  - override /optimizer: adamw
+
+# all parameters below will be merged with parameters from default configurations set above
+# this allows you to overwrite only specified parameters
+
+tags: ["resnet34", "only_imaging", "baseline", "coral", "try_with_only_n_samples"]
+
+trainer:
+  max_epochs: 1
+  
+
+data:
+  batch_size: 64
+  try_with_only_n_samples: 20
+
+model:
+  model: resnet34
+  coral_lambda: 0
+
+optimizer:
+  lr: 0.001
+
+logger:
+  wandb:
+    tags: ${tags}
+    project: "setup-testing"

@@ -1,0 +1,43 @@
+# @package _global_
+
+defaults:
+  # this is used for the evaluation on the downstream task
+  - /data@downstream_data: downstream # This loads data/downstream.yaml and assigns it to the key downstream_data instead of data.
+  - override /data: pretrain
+  - override /model: vision_language
+  - override /callbacks: vision_language_pretraining_without_early_stopping
+  - override /trainer: default
+  - override /optimizer: adam
+  - override /scheduler: no_scheduler
+
+# all parameters below will be merged with parameters from default configurations set above
+# this allows you to overwrite only specified parameters
+
+tags: ["NO augmentations", "resnet34", "distilbert", "pretrain", "NO deduplicate", "NO masked loss", "Downstream Evaluation"] # currently distilbert is fixed and not configurable
+
+trainer:
+  max_epochs: 1
+
+data:
+  batch_size: 128
+  try_with_only_n_samples: 100
+
+downstream_data:
+  batch_size: 128
+  try_with_only_n_samples: 100
+
+model:
+  image_model: resnet34
+  embedding_dim: 32
+  deduplicate: false
+  masked_loss: false
+  downstream_datamodule: ${downstream_data} # used for downstream evaluation during pretraining and also at the end of pretraining
+
+optimizer:
+  lr: 1e-4
+
+logger:
+  wandb:
+    name: ${model.image_model}_distilbert
+    tags: ${tags}
+    project: "setup-testing"

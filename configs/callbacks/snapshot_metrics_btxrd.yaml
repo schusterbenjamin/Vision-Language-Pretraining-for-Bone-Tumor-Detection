@@ -1,0 +1,4 @@
+snapshot_btxrd:
+    _target_: src.utils.MetricSnapshotCallback.SnapshotAllMetricsOnBestCallback
+    monitor: val/btxrd/accuracy
+    mode: max

@@ -1,0 +1,4 @@
+_target_: src.data.PretrainDataModule.PretrainDataModule
+batch_size: 128
+try_with_only_n_samples: null
+tokenizer: distilbert

@@ -1,0 +1,40 @@
+program: src/train.py
+method: bayes
+metric:
+  goal: minimize
+  name: val/combined/loss
+parameters:
+  scheduler:
+    values: ["no_scheduler", "cosine", "cosine_with_warmup"]
+  optimizer:
+    values: ["adamw", "adam"]
+  optimizer.lr:
+    min: !!float 1e-8
+    max: !!float 5e-5
+  data.batch_size:
+    values: [8, 16, 32, 64, 128]
+  model.embedding_dim:
+    values: [64, 128, 256, 512]
+command:
+  - python
+  - ${program}
+# Defining fixed parameters directly in the command (I dont want to have to specify a new hydra config file for each sweep)
+  - seed=42
+  - trainer.max_epochs=300 # 300 taken from Michaels master's thesis
+  - data=pretrain
+  - model=vision_language
+  - model.image_model=resnet34
+  - ++model.image_embedding_dim=512
+  - ++model.text_embedding_dim=312
+  - ++text_encoder_model=tinybert
+  - ++model.text_encoder_model=${text_encoder_model}
+  - ++data.tokenizer=${text_encoder_model}
+  - model.deduplicate=false
+  - model.masked_loss=false
+  - +data@downstream_data=downstream
+  - model.downstream_datamodule=${downstream_data}
+  - logger.wandb.project=vision-language-bone-tumor-pretraining-reloaded
+  - logger.wandb.name=${model.image_model}_${model.text_encoder_model}
+  - callbacks=vision_language_pretraining
+  - k_fold_cross_validation=false
+  - ${args_no_hyphens}
